@@ -1,0 +1,9 @@
+{
+  "project_name": "project name",
+  "user": "anonymous",
+  "author": "anonymous",
+  "license": "MIT",
+  "version_control_domain": "github.com",
+  "repository": "https://{{cookiecutter.version_control_domain}}/{{cookiecutter.user}}/{{cookiecutter.name}}",
+  "version": "0.1.0"
+}
