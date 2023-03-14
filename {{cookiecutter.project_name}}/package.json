@@ -1,8 +1,8 @@
 {
-  "name": "cortex-plugin-react-template",
+  "name": "{{cookiecutter.project_name}}",
   "version": "0.0.1",
   "description": "TODO: write a description",
-  "license": "MIT",
+  "license": "{{cookiecutter.license}}",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
