@@ -9,6 +9,7 @@ module.exports = {
     ecmaVersion: "latest",
     project: "tsconfig.json",
     sourceType: "module",
+    tsconfigRootDir: __dirname,
   },
   plugins: ["react"],
   rules: {},
