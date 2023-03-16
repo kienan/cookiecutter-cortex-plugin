@@ -9,3 +9,4 @@
 # This project
 node_modules/
 dist/
+yarn-error.log
