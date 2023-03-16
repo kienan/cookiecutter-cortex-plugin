@@ -5,5 +5,5 @@
   "license": "MIT",
   "version_control_domain": "github.com",
   "repository": "https://{{cookiecutter.version_control_domain}}/{{cookiecutter.user}}/{{cookiecutter.project_name}}",
-  "version": "0.1.1"
+  "version": "0.1.0"
 }
