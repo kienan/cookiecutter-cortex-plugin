@@ -1,6 +1,6 @@
 # {{ cookiecutter.project_name }}
 
-{{ cookiecutter.project_name }} is a [Cortex](https://www.cortex.io/) plugin. To see how to run the plugin inside of Cortex, see [the docs](https://docs.cortex.io/docs/plugins).
+{{ cookiecutter.project_name }} is a [Cortex](https://www.cortex.io/) plugin. To see how to run the plugin inside of Cortex, see [our docs](https://docs.cortex.io/docs/plugins).
 
 ### Prerequisites
 
