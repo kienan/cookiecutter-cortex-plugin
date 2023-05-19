@@ -1,7 +1,6 @@
 {
   "name": "{{cookiecutter.project_name}}",
   "version": "{{cookiecutter.version}}",
-  "description": "TODO: write a description",
   "license": "{{cookiecutter.license}}",
   "dependencies": {
     "@cortexapps/plugin-core": "^0.3.1",
