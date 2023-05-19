@@ -1,26 +1,48 @@
 import type React from "react";
-import logo from "../assets/logo.svg";
+import {
+  Box,
+  Button,
+  Logo,
+  Stack,
+  ThemeProvider,
+  Title,
+} from "@cortexapps/plugin-core/components";
 import "../baseStyles.css";
 import ErrorBoundary from "./ErrorBoundary";
-import { useEffect } from "react";
+import { useCallback, useState } from "react";
 import { getCortexContext } from "../api/Cortex";
 
 const App: React.FC = () => {
-  useEffect(() => {
-    const fetchContext = async (): Promise<void> => {
-      const context = await getCortexContext();
-      console.log(`Cortex context:`, context);
-    };
+  const [cortexContext, setCortexContext] = useState<any>(null);
 
-    void fetchContext();
-  });
+  const fetchContext = useCallback(async () => {
+    const context = await getCortexContext();
+    setCortexContext(context);
+  }, []);
 
   return (
     <ErrorBoundary>
-      <div>
-        <img src={logo} />
-        <h2>My Awesome Cortex Plugin</h2>
-      </div>
+      <ThemeProvider>
+        <Stack>
+          <Logo />
+          <Title level={1}>My Awesome Cortex Plugin</Title>
+          <Box>
+            <Button
+              onClick={() => {
+                void fetchContext();
+              }}
+            >
+              View context
+            </Button>
+          </Box>
+          {Boolean(cortexContext) && (
+            <>
+              <Title level={2}>Plugin context</Title>
+              <pre>{JSON.stringify(cortexContext, null, 2)}</pre>
+            </>
+          )}
+        </Stack>
+      </ThemeProvider>
     </ErrorBoundary>
   );
 };

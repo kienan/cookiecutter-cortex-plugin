@@ -16,6 +16,13 @@ Developing and building this plugin requires either [yarn](https://classic.yarnp
 ### Notable scripts
 
 The following commands come pre-configured in this repository. You can see all available commands in the `scripts` section of [package.json](./package.json). They can be run with npm via `npm run {script_name}` or with yarn via `yarn {script_name}`, depending on your package manager preference. For instance, the `build` command can be run with `npm run build` or `yarn build`.
-* `build` - compiles the plugin. The compiled code root is `./src/index.tsx` (or as defined by [webpack.config.js](webpack.config.js)) and the output is generated into `dist/ui.html`.
-* `test` - runs all tests defined in the repository using [jest](https://jestjs.io/)
-* `lint` - runs lint and format checking on the repository using [prettier](https://prettier.io/) and [eslint](https://eslint.org/)
+
+- `build` - compiles the plugin. The compiled code root is `./src/index.tsx` (or as defined by [webpack.config.js](webpack.config.js)) and the output is generated into `dist/ui.html`.
+- `test` - runs all tests defined in the repository using [jest](https://jestjs.io/)
+- `lint` - runs lint and format checking on the repository using [prettier](https://prettier.io/) and [eslint](https://eslint.org/)
+- `lintfix` - runs eslint in fix mode to fix any linting errors that can be fixed automatically
+- `formatfix` - runs Prettier in fix mode to fix any formatting errors that can be fixed automatically
+
+### Available React components
+
+See available UI components via our [Storybook](https://cortexapps.github.io/plugin-core/).
