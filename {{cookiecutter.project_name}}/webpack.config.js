@@ -44,6 +44,7 @@ module.exports = (env, argv) => ({
   output: {
     filename: "[name].js",
     path: path.resolve(__dirname, "dist"), // Compile into a folder named "dist"
+    publicPath: '',
   },
 
   // Tells Webpack to generate "ui.html" and to inline "ui.ts" into it
@@ -56,4 +57,12 @@ module.exports = (env, argv) => ({
     }),
     new InlineChunkHtmlPlugin(HtmlWebpackPlugin, [/ui/]),
   ],
+
+  devServer: {
+    compress: true,
+    port: 9000,
+    static: {
+      directory: path.join(__dirname, "dist"),
+    },
+  },
 });
