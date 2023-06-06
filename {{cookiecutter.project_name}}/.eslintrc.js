@@ -3,7 +3,12 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: ["plugin:react/jsx-runtime", "standard-with-typescript", "prettier"],
+  extends: [
+    "plugin:react/jsx-runtime",
+    "plugin:react-hooks/recommended",
+    "standard-with-typescript",
+    "prettier",
+  ],
   overrides: [],
   parserOptions: {
     ecmaVersion: "latest",
@@ -12,7 +17,10 @@ module.exports = {
     tsconfigRootDir: __dirname,
   },
   plugins: ["react"],
-  rules: {},
+  rules: {
+    // conflicts with no-extra-boolean-cast
+    "@typescript-eslint/strict-boolean-expressions": "off",
+  },
   settings: {
     react: {
       version: "detect",
