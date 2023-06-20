@@ -3,6 +3,7 @@ import type React from "react";
 
 const PluginContext: React.FC = () => {
   const context = usePluginContext();
+
   return (
     <>
       <Title level={2}>Plugin context</Title>
