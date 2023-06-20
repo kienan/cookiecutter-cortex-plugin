@@ -1,5 +1,5 @@
 {
-  "name": "a",
+  "name": "{{cookiecutter.project_name}}",
   "version": "{{cookiecutter.version}}",
   "license": "{{cookiecutter.license}}",
   "dependencies": {
