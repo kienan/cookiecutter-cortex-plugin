@@ -1,9 +1,9 @@
 {
-  "name": "{{cookiecutter.project_name}}",
+  "name": "a",
   "version": "{{cookiecutter.version}}",
   "license": "{{cookiecutter.license}}",
   "dependencies": {
-    "@cortexapps/plugin-core": "^1.2.1",
+    "@cortexapps/plugin-core": "^1.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
