@@ -3,7 +3,7 @@
   "version": "{{cookiecutter.version}}",
   "license": "{{cookiecutter.license}}",
   "dependencies": {
-    "@cortexapps/plugin-core": "^1.4.0",
+    "@cortexapps/plugin-core": "^1.6.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
