@@ -36,6 +36,7 @@ module.exports = (env, argv) => ({
         },
       }),
     ],
+    usedExports: true,
   },
 
   // Webpack tries these extensions for you if you omit the extension, like "import './file'"
