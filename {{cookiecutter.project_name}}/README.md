@@ -2,6 +2,8 @@
 
 {{ cookiecutter.project_name }} is a [Cortex](https://www.cortex.io/) plugin. To see how to run the plugin inside of Cortex, see [our docs](https://docs.cortex.io/docs/plugins).
 
+This was created by {{ cookiecutter['@cortex_inputs'].user.name }} as part of the template named {{ cookiecutter['@cortex_inputs'].template_details.name }}.
+
 ### Prerequisites
 
 Developing and building this plugin requires either [yarn](https://classic.yarnpkg.com/lang/en/docs/install/) or [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
