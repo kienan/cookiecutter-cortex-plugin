@@ -1,0 +1,6 @@
+openapi: 3.0.1
+info:
+  title: My Service
+  description: This is my cool service.
+  x-cortex-tag: {{cookiecutter.project_name}}
+  x-cortex-type: service
