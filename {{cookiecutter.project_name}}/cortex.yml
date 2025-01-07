@@ -4,3 +4,6 @@ info:
   description: This is my cool service.
   x-cortex-tag: {{cookiecutter.project_name}}
   x-cortex-type: service
+  x-cortex-git:
+    github:
+      repository: kienan/cookiecutter-cortex-plugin
