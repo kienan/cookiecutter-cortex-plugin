@@ -1,5 +1,6 @@
 {
   "project_name": "my-cortex-plugin",
+  "other_value": "test",
   "license": "MIT",
   "version": "0.1.0"
 }
